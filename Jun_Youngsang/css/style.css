@@ -61,12 +61,12 @@ body {
     padding-bottom: 10vh;
   }
 
-@media (max-width: 750px) { /* This would be for media with a maximum width of 750px */
+@media (width <= 750px) { 
     #features { 
         width: auto;
-        margin:10vh;
+        margin: 10vh;
     }
-  }
+  } /* This would be for media with a maximum width of 750px */
 
 /* The footer contains some concluding notes, like attributions to gov.sg */
 #footer {
@@ -127,11 +127,6 @@ body {
     text-align: left;
     font-size: 1.2em;
     max-width: 50vw;
-}
-
-#features .imageCredit {
-  font-size: 0.9em;
-  margin-top: -5px;
 }
 
 /* Styling the footer. */
@@ -202,7 +197,7 @@ body {
     width: 70%;
 }
 
-@media (max-width: 750px) {
+@media (width <= 750px) {
     .centered, .lefty, .righty, .fully {
         width: 100vw;
         margin: 0 auto;
