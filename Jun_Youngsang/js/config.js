@@ -134,7 +134,7 @@ var config = {
             {
                 layer: "your_line_layer",
                 opacity: 1,
-                duration: 000,
+                duration: 0,
             },
             {
                 layer: "your_points_layer",

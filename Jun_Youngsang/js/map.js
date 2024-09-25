@@ -24,7 +24,7 @@ and then create the map element and add the layers
 with scrollama
 */
 
-/*The variable smallMedia defines the maximum width of the screen
+/* The variable smallMedia defines the maximum width of the screen
 that will be considered a small screen */
 var smallMedia = window.matchMedia("(max-width: 600px)").matches;
 
