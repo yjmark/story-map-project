@@ -28,6 +28,23 @@ body {
     position: fixed;
 }
 
+/* Styling any popups */
+.mapboxgl-popup-content p {
+    font-weight: 300;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+.mapboxgl-popup-content h4 {
+    font-weight: 500;
+    font-size: 0.9em;
+    border-width: 0 0 0.5px;
+    border-style: solid;
+    border-color: rgb(80, 80, 80);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /* The header will hold the title, byline and an introductory description of the project. */
 #header {
     margin: auto;
@@ -104,12 +121,14 @@ body {
     text-align: left;
     max-width: 50vw;
 }
+
 #features p {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     font-size: 1.2em;
     max-width: 50vw;
 }
+
 #features .imageCredit {
   font-size: 0.9em;
   margin-top: -5px;
@@ -127,23 +146,6 @@ body {
   a, a:hover, a:visited {
       color: #a8d7e8;
     }
-
-/* Styling any popups */
-.mapboxgl-popup-content p {
-    font-weight: 300;
-    margin-top: 0.3em;
-    margin-bottom: 0;
-}
-
-.mapboxgl-popup-content h4 {
-    font-weight: 500;
-    font-size: 0.9em;
-    border-width: 0 0 0.5px;
-    border-style: solid;
-    border-color: rgb(80, 80, 80);
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
 
 /* This section defines styles for various classes used in the storymap. */
 .hidden {
