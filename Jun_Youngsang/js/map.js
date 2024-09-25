@@ -25,7 +25,8 @@ and then create the map element and add the layers
 with scrollama
 */
 /* global config */
-
+/* global mapboxgl */
+/* global scrollama */
 /* The variable smallMedia defines the maximum width of the screen
 that will be considered a small screen */
 const smallMedia = window.matchMedia('(max-width: 600px)').matches;
@@ -235,10 +236,10 @@ const map = new mapboxgl.Map({
   interactive: false, // prevents the user from interacting with the map, such as zooming in or out
   transformRequest: transformRequest,
 });
+const marker = new mapboxgl.Marker({ color: config.markerColor });
 
 // Check if markers should be shown on the map
 if (config.showMarkers) {
-  let marker = new mapboxgl.Marker({ color: config.markerColor });
   marker.setLngLat(config.chapters[0].location.center).addTo(map);
 }
 
@@ -254,30 +255,6 @@ For this template storymap, we have the following layers:
 
 ########################################################################
 */
-
-function styleFunction(layer) {
-  //  const candidateVotes1 = Number(layer.properties.candidatevotes) || 0;
-  //  const totalVotes1 = Number(layer.properties.totalvotes) || 1;
-  //  const proportion = candidateVotes1 / totalVotes1 * 100;
-  const sitecomponent = layer.properties.siteReportingComponent;
-  let siteColor;
-  if (sitecomponent === 'usaf') {
-    siteColor = '#27E8FF'; //
-  } else if (sitecomponent ==='usa') {
-    siteColor = 'green'; //
-  } else if (sitecomponent ==='usmc') {
-    siteColor = 'red'; //
-  } else if (sitecomponent ==='usn') {
-    siteColor = 'blue'; //
-  } else {
-    siteColor = 'gray'; //
-  }
-
-  return {
-    'line-color': siteColor,
-    'line-width': 2,
-  };
-}
 
 map.on('load', function() {
   // 1. your_line_layer (line)

@@ -441,3 +441,5 @@ const config = {
       ],
     },
   ]};
+
+config();
