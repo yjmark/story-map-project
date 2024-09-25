@@ -35,7 +35,7 @@ body {
     width: 100%; 
     position: relative; 
     z-index: 5; /* Ensures the header is always on top of the map */
-    padding: 2vh 0vh 5vh 0vh; /* top right bottom left */
+    padding: 2vh 0 5vh; /* top right bottom left */
   }
 
 /* The features element holds all the chapters. */
@@ -43,6 +43,7 @@ body {
     padding-top: 80vh;
     padding-bottom: 10vh;
   }
+
   @media (max-width: 750px) { /* This would be for media with a maximum width of 750px */
     #features {
       width: auto;
@@ -69,6 +70,7 @@ body {
     margin: auto;
     max-width: 600px;
 }
+
 #header h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -78,11 +80,13 @@ body {
     text-align: left;
     max-width: 600px;
 }
+
 #header p.byline {
     font-weight: 300;
     font-size: 0.9em;
     margin: 0.5em auto 0.8em auto;
 }
+
 #header p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -116,8 +120,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     max-width: 600px;
-    padding: 0.75em 0em;
-    margin: 0px auto;
+    padding: 0.75em 0;
+    margin: 0 auto;
   }
   
   a, a:hover, a:visited {
@@ -128,7 +132,7 @@ body {
 .mapboxgl-popup-content h4 {
     font-weight: 500;
     font-size: 0.9em;
-    border-width: 0px 0px 0.5px 0px;
+    border-width: 0 0 0.5px 0;
     border-style: solid;
     border-color: rgb(80, 80, 80);
     margin-top: 0.5em;
@@ -138,7 +142,7 @@ body {
 .mapboxgl-popup-content p {
     font-weight: 300;
     margin-top: 0.3em;
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 /* This section defines styles for various classes used in the storymap. */
@@ -168,7 +172,7 @@ body {
 
 .light {
     color: #444;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .dark {
