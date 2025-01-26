@@ -74,11 +74,11 @@ const footerDiv = `
 <h3>Epilogue</h3>
 <p>11 years ago today, I honorably completed my mandatory military service with Korean Augmentation to the United States Army (KATUSA). 5 years ago today, while working for the Ministry of National Defense, the Republic of Korea (ROK) as a civil servant, my team conducted a consultation with the U.S. Forces Korea (USFK) regarding the relocation of U.S. military facilities stationed at the ROK Air Bases. Today I am glad to be here in the U.S., studying Urban Spatial Analytics project using JavaScript at the University of Pennsylvania. I hope this storymap will be helpful to those who start to work for/with the U.S. military.</p>
 <div style="max-width:70%; text-align:center; margin-left:auto; margin-right:auto">
-  <img src="./data/images/1265217_586456401413183_310314933_o.jpg" alt="Image caption" style="max-width:90%; height:auto;">
+  
 </div>
 <p align="center"><em>September 25, 2013, Camp Red Cloud, USFK base in Korea</em></p>
 <div style="max-width:70%; text-align:center; margin-left:auto; margin-right:auto">
-  <img src="./data/images/190925_MND-USFK.png" alt="Image caption" style="max-width:90%; height:auto;">
+  
 </div>
 <p align="center"><em>September 25, 2019, Camp Humphreys, USFK base in Korea</em></p>
 <h3>Reference</h3>
